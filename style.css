@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+:root{--text:'Rajdhani', sans-serif;--blue-arvin:#00132B;--green-arvin:#54BF08;--black-arvin:#111;--white:#fff;}
+html{font-family:var(--text);background-image:url("https://ik.imagekit.io/vjz75qw96/assets/assets_for_classes/bg3.png?updatedAt=1687554775703");background-size:cover;}
+body{margin:5rem;display:flex;align-items:center;justify-content:space-between;flex-direction:column;gap:3rem;}
+.logo{max-width:100px;
+
+ animation: slideIn 0.3s ease-out forwards;
+
+}
+nav{display:flex;gap:3rem;
+
+ animation: slideIn 0.3s ease-out forwards;
+}
+a{color:var(--white);text-decoration:none;
+ animation: slideIn 0.3s ease-out forwards;
+
+
+}
+a:hover{color:var(--green-arvin);}
+.classes,.resources{display:flex;flex-direction:column;max-height:10rem;text-align:center;overflow-y:auto;background-color:rgba(0,0,0,0.1);
+ animation: slideIn 0.3s ease-out forwards;
+padding: 2rem;
+}
+.classes::-webkit-scrollbar,.resources::-webkit-scrollbar{width:3px;background-color:#fff;}
+.classes::-webkit-scrollbar-thumb,.resources::-webkit-scrollbar-thumb{background-color:var(--blue-arvin);}
+input,select{margin:1rem;background-color:var(--blue-arvin);color:var(--white);font-family:var(--text);text-align:center;width:7rem;}
+input::placeholder{color:var(--white);text-align:center;}
+.selected{text-decoration:underline;
+}
+.hidden{display:none;}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
